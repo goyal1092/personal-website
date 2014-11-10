@@ -1,1 +1,5 @@
 gh-pages
+*.pyc
+.DS_Store
+.idea
+*~

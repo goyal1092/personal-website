@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block head %}
+	  	<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">
+		{% endblock head %}
+
+	  <title>
+	  {% block title %}
+	  	Portfolio - Gaurav Goyal
+	  {% endblock title %}
+	  </title>
+
+	  <!-- Bootstrap Core CSS and Custom CSS-->
+	  {% block stylesheets %}
+		  <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		  <link href="../static/css/custom.css" rel="stylesheet">
+	  {% endblock stylesheets %}
+	  
+	  <!-- Custom Fonts -->
+	  {% block fonts %}
+		  <link href="../static/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  {% endblock fonts %}
+	</head>
+
+	<body id="page-top" class="index">
+	    <!-- Navigation -->
+	  {% block header %}
+	    <nav class="navbar navbar-default navbar-fixed-top glass">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a href="{{ url_for('index') }}" class="navbar-brand page-scroll" href="#page-top">Gauarv Goyal </br><p id="subheading">Software developer / UI developer</p></a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="active">
+	                        <a href="{{ url_for('index') }}">Home</a>
+	                    </li>
+	                    <li>
+	                        <a href="#portfolio">Portfolio</a>
+	                    </li>
+	                    <li>
+	                        <a href="{{ url_for('about') }}">About</a>
+	                    </li>
+	                    <li>
+	                        <a href="#team">Blog</a>
+	                    </li>
+	                    <li>
+	                        <a href="#contact">Contact</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	  {% endblock header %}
+
+	  {% block main %}
+	    
+	  {% endblock main %}
+
+	  {% block footer %}
+	    <footer>
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-md-4">
+	            <div class="col-md-11 pull-left">
+	              <img src="#" height="70px" width="100px" class="img-circle textwrap"/>
+	              My name is Gaurav Goyal. I am graduate from Chitkara University in bachelor of engineering.
+	              I like to write clean code and develop perfect solutions for complex problems.</br></br> If you are in a problem, solution is just 
+	              a <a href="#">click away ---></a>
+	            </div>
+	          </div>
+	          <div class="col-md-4 socials">
+	            <div class="col-md-11 pull-left">
+	              <div class="row pad-bottom-15">
+	                <div class="col-md-2">
+	                  <i class="fa fa-github github"></i>
+	                </div>
+	                <div class="col-md-10">
+	                Connect and view my projects at @goyal1092
+	                </div>
+	              </div>
+	              <div class="row pad-bottom-15">
+	                <div class="col-md-2">
+	                  <i class="fa fa-plus"></i>
+	                </div>
+	                <div class="col-md-10">
+	                  Connect with me on:
+	                </div>
+	                <ul class="list-inline col-md-10 col-md-offset-2 margin-bottom-0">
+	                  <li class="col-md-3"><a href="#"><i class="fa fa-twitter socials"></i></a></li>
+	                  <li class="col-md-3"><a href="#"><i class="fa fa-facebook socials"></i></a></li>
+	                  <li class="col-md-3"><a href="#"><i class="fa fa-linkedin socials"></i></a></li>
+	                <ul>
+	              </div>
+	              <div class="row pad-bottom-15">
+	                <div class="col-md-2">
+	                  <i class="fa fa-envelope-o"></i>
+	                </div>
+	                <div class="col-md-10">
+	                <a href="mailto:gauravgoyal1092@gmail.com">gauravgoyal1092@gmail.com</a>
+	                </div>
+	              </div>
+	              <div class="row pad-bottom-15">
+	                <div class="col-md-2">
+	                  <i class="fa fa-phone"></i>
+	                </div>
+	                <div class="col-md-10">
+	                <a href="tel:+91-9729494901">+91-9729494901</a>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-md-4">
+	            <div class="col-md-11 pull-left">
+	              <ul class="list-unstyled">
+	                  <li>
+	                      <a href="/about">About</a>
+	                      <p>Learn about my skills and philosophy</p>
+	                  </li>
+	                  <li>
+	                      <a href="/resume">My Resume</a>
+	                      <p>Learn about my working capabilities</p>
+	                  </li>
+	                  <li>
+	                      <a href="/blog">Blog</a>
+	                      <p>Read web related articles, opinions & tutorials</p>
+	                  </li>
+	                  <li>
+	                      <a href="/contact">Contact</a>
+	                      <p>Send a message or project request.</p>
+	                  </li>
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="row pad-top-30 margin-bottom-0">
+	          <p class="copyright-text col-md-12">Copyright © 2014 by Gaurav Goyal
+	        </div>
+	      </div>
+	    </footer>
+	  {% endblock footer %}
+
+	  {% block scripts %}
+	  {% endblock scripts %}
+
+	  {% block script_tag %}
+	  {% endblock script_tag %}
+  </body>
+</html>
