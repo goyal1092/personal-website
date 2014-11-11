@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block main %}
+<div id="menu" style="margin:200px;">
+  <ul>
+    <li id="link-home"><a href="{{ url_for('index') }}">Home</a></li>
+    <li id="link-blog"><a href="{{ url_for('blog_index') }}">Blog</a></li>
+    <li id="link-contact"><a href="{{ url_for('contact') }}">Contact</a></li>
+  </ul>
+</div>
+  <h1>{{ blog.meta.title }}</h1>
+  {{ blog }}
+{% endblock main %}

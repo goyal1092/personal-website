@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+  <section id="blog-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">My Blog</h2>
+          <h3 class="section-subheading text-muted">Tech as i know it.</h3>
+        </div>
+      </div>
+      <div class="blog-listing">
+        {% for b in blog_list %}
+          <div class="row bloglist pad-bottom-15 pad-top-15">
+            <div class="col-md-12">
+              <h3 class="section-heading">{{ b.meta.title }}</h3>
+              <h4 class="section-subheading text-muted">{{ b.meta.author }}, {{ b.meta.published }}</h4>
+              <p class="clearfix">{{ b.meta.description }} .. <a href="{{ url_for('blog_detail', path=b.path ) }}">Read More <i class="fa fa-angle-double-right"></i></a></p>
+              <a href="{{ url_for('blog_detail', path=b.path ) }}" class="btn btn-primary pull-right"> Read This Post&nbsp; &nbsp;<i class="fa fa-play"></i></a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock main %}

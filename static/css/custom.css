@@ -39,8 +39,12 @@ section {
     padding: 100px 0;
 }
 
+
 .pad-bottom-15{
-	padding-bottom: 15px;
+  padding-bottom: 15px;
+}
+.pad-top-15{
+  padding-top: 15px;
 }
 .pad-top-10{
 	padding-top: 10px;
@@ -50,6 +54,9 @@ section {
 }
 .margin-bottom-0{
 	margin-bottom: 0px;
+}
+.margin-bottom-20{
+  margin-bottom: 30px;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -497,4 +504,29 @@ footer .copyright-text{
 }
 #openlabs-image{
   background-color: #DADADA;
+}
+
+/* blog listing */
+.bloglist{
+  background: whitesmoke;
+  border-radius: 5px;
+  border: 1px double rgb(242, 242, 242);
+  margin-bottom: 30px;
+}
+.bloglist:hover{
+  background-color: rgb(242, 242, 242);
+}
+#blog-list  h4.section-subheading {
+    margin-bottom: 20px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+#blog-list p a{
+  color: #A98A1F;
+}
+#blog-list p a:hover{
+  color: #93781A;
 }
